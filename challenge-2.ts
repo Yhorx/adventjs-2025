@@ -16,8 +16,6 @@
 function manufactureGifts(
     giftsToProduce: Array<{ toy: string, quantity: number }>
 ): string[] {
-
-
     const repeatProducts: string[] = []
 
     giftsToProduce.forEach(({ toy, quantity }) => {
