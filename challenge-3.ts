@@ -17,10 +17,10 @@
 function drawGift(size: number, symbol: string): string {
     if (size < 2) return ''
 
-    const firstAndEnd = symbol.repeat(size)
+    const firstAndLast = symbol.repeat(size)
     const mid = `\n${symbol}${' '.repeat(size - 2)}${symbol}`.repeat(size - 2).concat('\n')
 
-    return firstAndEnd.concat(mid).concat(firstAndEnd)
+    return firstAndLast.concat(mid).concat(firstAndLast)
 }
 
 const g1 = drawGift(4, '*')
