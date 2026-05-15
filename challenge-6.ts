@@ -17,7 +17,9 @@ function matchGloves(gloves: Glove[]): string[] {
         if (!counts[glove.color]) {
             counts[glove.color] = { L: 0, R: 0 }
         }
+
         counts[glove.color][glove.hand]++
+        console.log(counts[glove.color])
 
        
         if (counts[glove.color].L > 0 && counts[glove.color].R > 0) {
